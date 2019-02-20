@@ -14,20 +14,20 @@
  * limitations under the License.
  * </p>
  */
-package io.shardingsphere.core.keygen.leaf;
+package io.shardingsphere.api.config.rule;
 
-import io.shardingsphere.core.keygen.KeyGenerator;
+import io.shardingsphere.core.constant.KeyGeneratorEnum;
+import lombok.Builder;
+import lombok.Data;
 
 /**
- * snowflake from leaf
- *
- * @url https://github.com/Meituan-Dianping/Leaf
  * @author:zhaodong.xzd
- *
+ * @github https://github.com/Yaccc
  */
-public class SnowFlakeKeyGenerator implements KeyGenerator {
-    @Override
-    public Number generateKey() {
-        return null;
-    }
+@Data
+@Builder
+public class KeyGeneratorConfiguration implements RuleConfiguration {
+    private KeyGeneratorEnum keyGeneratorType;
+
+
 }
