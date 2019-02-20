@@ -20,6 +20,7 @@ import io.shardingsphere.core.constant.KeyGeneratorEnum;
 import lombok.Builder;
 import lombok.Data;
 
+
 /**
  * @author:zhaodong.xzd
  * @github https://github.com/Yaccc
